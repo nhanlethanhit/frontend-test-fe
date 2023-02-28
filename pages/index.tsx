@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import styles from '../styles/Home.module.css'
 const inter = Inter({ subsets: ["latin"] });
-const URL_API = "http://localhost:5000";
+const URL_API = "https://frontend-test-ms3y9q8ya-nhanlethanhit.vercel.app";
 
 const headers = {};
 export default function Home() {
