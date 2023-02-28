@@ -9,12 +9,8 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
-  Input,
-  Label,
-  Form,
-  FormGroup,
 } from "reactstrap";
-
+import styles from '../styles/Home.module.css'
 const inter = Inter({ subsets: ["latin"] });
 const URL_API = "http://localhost:5000";
 
@@ -89,14 +85,14 @@ export default function Home() {
           </div>
         </div> */}
         <nav className="navbar navbar-expand navbar-light bg-white fixed-top">
-          <div className="container d-flex justify-content-between">
+          <div className={`container d-flex justify-content-between ${styles.container}`}>
             <div className="navbar-brand">
-              <Image src="/images/logo.png" alt="" width={50} height={50} />
+              <Image src="/images/logo.png" alt="" width={65} height={60} />
             </div>
             <div className="collapse navbar-collapse justify-content-end">
               <div className="d-flex gap-1">
                 <div className="d-flex flex-column ">
-                  <span>Handicrafted by</span>
+                  <span style={{color: "#a3a3a3", fontStyle:'italic', fontSize:'0.9rem'}}>Handicrafted by</span>
                   <span>Le Thanh Nhan</span>
                 </div>
 
@@ -112,14 +108,14 @@ export default function Home() {
       </header>
       <main
         className="pb-5"
-        style={{ marginTop: "76px", borderBottom: "2px solid #e5e5e5" }}
+        style={{ marginTop: "86px", borderBottom: "2px solid #e5e5e5" }}
       >
         <section className="" style={{ backgroundColor: "#29b363" }}>
           <div
-            className="container py-5"
+            className={`container py-5 ${styles.container}`}
             style={{ backgroundColor: "#29b363" }}
           >
-            <h1 className="text-white text-center">
+            <h1 className="text-white text-center" style={{ fontSize:'2rem', fontWeight:'400'}}>
               A joke a day keeps the doctor away
             </h1>
             <p className="text-white  text-center pt-1">
@@ -131,14 +127,14 @@ export default function Home() {
           className=""
           style={{ backgroundColor: "#fcfcfc", color: "#727272" }}
         >
-          <div className="container pt-5" style={{}}>
+          <div className={`container pt-5 ${styles.container}`} style={{}}>
             <p>{joke && joke.content}</p>
             <hr className="mt-5" style={{ maxWidth: "75%", margin: "auto" }} />
           </div>
         </section>
         <section className="" style={{ backgroundColor: "#fcfcfc" }}>
           <div
-            className="container pt-3 d-flex flex-wrap justify-content-center gap-4"
+            className={`container pt-3 d-flex flex-wrap justify-content-center gap-4 ${styles.container}`}
             style={{}}
           >
             <button
@@ -175,15 +171,20 @@ export default function Home() {
 
       <footer
         className="p-4 mb-1"
-        style={{ borderBottom: "2px solid #cccdce", color: "#a3a3a3" }}
+        style={{  color: "#a3a3a3" }}
       >
-        <div className="container">
-          <span className="text-center d-flex" style={{ fontSize: "0.8rem" }}>
+        <div className={`container ${styles.container} d-flex flex-column justify-content-center`}>
+          <span className="text-center d-flex align-self-center" style={{ fontSize: "0.8rem" }}>
             This website is created as part of HIsolutions program. The
             materials contained on this website are provided for general
-            information only and do not constitute any form of advice. HLS
+          </span>
+          <span className="text-center d-flex align-self-center" style={{ fontSize: "0.8rem" }}>
+          information only and do not constitute any form of advice. HLS
             assumes no responsibility for the accuracy of any particular
-            statement and accepts no liability for any loss or damage which may
+            statement and
+          </span>
+          <span className="text-center d-flex align-self-center" style={{ fontSize: "0.8rem" }}>
+          accepts no liability for any loss or damage which may
             arise from reliance on the information contained on this site.
           </span>
           <div className="text-center text-black mt-1">Copyright 2021 HLS</div>
