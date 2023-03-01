@@ -95,12 +95,13 @@ export default function Home() {
                   <span style={{color: "#a3a3a3", fontStyle:'italic', fontSize:'0.9rem'}}>Handicrafted by</span>
                   <span>Le Thanh Nhan</span>
                 </div>
-
-                <img
-                  src={"/images/avatar.png"}
-                  className="rounded-circle"
-                  style={{ width: "50px", height: "50px" }}
-                />
+                <div className="rounded-circle">
+                  <img
+                    src={"/images/avatar.png"}
+                    className="rounded-circle"
+                    style={{ width: "50px", height: "50px" }}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -139,7 +140,7 @@ export default function Home() {
           >
             <button
               type="button"
-              className="btn px-4"
+              className="btn px-4 text-white"
               style={{
                 backgroundColor: "#29b363",
                 border: "none",
@@ -153,7 +154,7 @@ export default function Home() {
             </button>
             <button
               type="button"
-              className="btn px-4"
+              className="btn px-4 text-white"
               style={{
                 backgroundColor: "#2c7edb",
                 border: "none",
