@@ -93,7 +93,7 @@ export default function Home() {
               <div className="d-flex gap-1">
                 <div className="d-flex flex-column ">
                   <span style={{color: "#a3a3a3", fontStyle:'italic', fontSize:'0.9rem'}}>Handicrafted by</span>
-                  <span>Le Thanh Nhan</span>
+                  <span>Jim HLS</span>
                 </div>
                 <div className="rounded-circle">
                   <img
